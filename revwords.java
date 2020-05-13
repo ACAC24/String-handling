@@ -12,13 +12,13 @@ class revwords{
 		String rev = "";
 
 		for(int i = 0; i < slen; i++){
-           letter = line.charAt(i);
-           if(letter != ' ')
-           	  word += letter;
-           else{
-           	  rev = word + " " + rev;
-           	  word = "";
-           }
+                   letter = line.charAt(i);
+                   if(letter != ' ')
+           	       word += letter;
+                   else{
+           	       rev = word + " " + rev;
+           	       word = "";
+                   }
 		}
 		System.out.println(rev);
 	}
